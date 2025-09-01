@@ -24,14 +24,13 @@ class Movie {
   final String title;
   final String imageUrl;
 
-  // Made constructor const so Movie objects can be created in const lists
+  // Made the constructor const to allow usage in const lists
   const Movie({required this.title, required this.imageUrl});
 }
 
 class MovieListPage extends StatelessWidget {
   const MovieListPage({Key? key}) : super(key: key);
 
-  // List of movies with const Movie constructors
   final List<Movie> movies = const [
     Movie(title: 'Movie 1', imageUrl: 'https://via.placeholder.com/300x450?text=Movie+1'),
     Movie(title: 'Movie 2', imageUrl: 'https://via.placeholder.com/300x450?text=Movie+2'),
